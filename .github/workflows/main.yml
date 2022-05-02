@@ -1,0 +1,14 @@
+name : hellowgit
+
+on : [push]
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - name: hello world 출력
+    run: echo hello, world
+  - name: 디렉토리 출력  
+    run: ls -al
+  - name: 파이썬버전 출력
+    run: python -V
